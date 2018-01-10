@@ -60,7 +60,7 @@ function isEquivilant(a, b) {
     return false;
   }
 
-  // if we've passed that test, let's iterate over the keys of a and compare compare the values at each key in both objects
+  // if we've passed that test, let's iterate over the keys of a and compare the values at each key in both objects
 
   for (let i = 0; i < akeys.length; i++) {
     let key = akeys[i];
@@ -80,3 +80,21 @@ function isEquivilant(a, b) {
 // 3. a has a property with value of undefined, while b doesn't have that key resulting in undefined (returns true when there isen't a match)
 
 // Ultimately I wouldn't trust isEquivilant() and would instead rely on .isEqual(a, b) in the Lo-Dash library which can handle deeper object value comparisons
+
+// ** Implement a recursive fibonacci function ** //
+
+function fibRecursive(n, a = 1, b = 0) {
+  if (n === 0) {
+    return b;
+  } else {
+    return fibRecursive(n - 1, a + b, a);
+  }
+}
+
+let start = performance.now();
+fibRecursive(n);
+let end = performance.now();
+let calcTime = end - start + ' milliseconds';
+localStorage.setItem('calcTime', calcTime);
+
+// List the phases of the React component lifecycle
