@@ -1,7 +1,5 @@
 # List the phases of the React component lifecycle #
 
-### Lifecycle methods prefixed with will are called right before something happens, and methods prefixed with did are called right after something happens. ###
-
 ### Mounting: An instance of a component is being created and inserted into the DOM ###
   lifecycle methods available:
 
@@ -25,3 +23,11 @@
   lifecycle methods available:
 
   * componentWillUnmount()
+
+### Lifecycle methods prefixed with will are called right before something happens, and methods prefixed with did are called right after something happens. ###
+
+
+# Redux #
+## Explain the role of the Reducer ##
+
+### The job of Reducers in Redux is to specify how an application's state changes in response to Actions, which describe something happening.
