@@ -37,4 +37,6 @@ lifecycle methods available:
 
 ## Notes on the Reddit Exercise
 
-I found a few things in the instructions confusing but did my best to get as close to what you were asking for. I wasn't sure where points for topics were supposed to come from, so I ended up sorting them by aggregating the subscriber count of relevant subbreddits per topic. Sorting Subreddits by upvote/downvote stumped me because to my knowledge only posts have that data. So I sorted Subreddits withing topics by their subscriber count. Lastly, I just ran out of time and wasn't able to implement the text field autocomplete/ adding a topic. I was able to deplot to heroku so you can see my working example easily https://reddit-code-challenge.herokuapp.com/topics
+I found a few things in the instructions confusing but did my best to get as close to what you were asking for. I wasn't sure where points for topics were supposed to come from, so I ended up sorting them by aggregating the subscriber count of relevant subbreddits per topic. Sorting Subreddits by upvote/downvote stumped me because to my knowledge only posts have that data. So I sorted Subreddits within topics by their subscriber count. Lastly, I just ran out of time and wasn't able to implement the text field autocomplete/ adding a topic. I was able to deploy to heroku so you can see my working example easily https://reddit-code-challenge.herokuapp.com/topics
+
+Thanks
