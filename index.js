@@ -3,7 +3,7 @@
 // Does Javascript pass parameters by value or by reference?
 
 // Answer:
-// In JavaScript, parameters are always passed by value. But when a variable that's passed is an Object, the value that's passed is a reference to the object, not the object itself. It's possible to modify the contents of an object, but attempting to overwrite a variable never changes the underlying object or primitive. The variable would then be pointed to a new object or primitive.
+// In JavaScript, parameters are always passed by value. But when a variable that's passed is an Object, the value that's passed is a reference to the object, not the object itself. It's possible to modify the contents of an object, but attempting to overwrite a variable never changes the underlying object or primitive.
 
 // Some examples:
 
@@ -30,7 +30,7 @@ for (var i = 0; i < arr.length; i++) {
 
 // Answer: Running this code results in "Index: 4, element: undefined" being printed to the console 4 times. setTimout() belongs to a Web API provided by the browser, and because of this when it's time to be exectued it's removed from the call stack in the event loop and moved to a callback queue, which then waits for everything else in the stack to be executed. Once the stack is empty, the code inside setTimout() can finally be exectued. Even if you changed the timer from 3000 to 0, the order of results would be the same.
 //
-// This is happening because setTimout() is unable to stop the executation of the for loop, and the for loop is has completed before the anonymous function inside setTimout() can be run.
+// This is happening because setTimout() is unable to stop the executation of the for loop, and the for loop has completed before the anonymous function inside setTimout() can be run.
 //
 // The last index (4) is printed because setTimout() has access to i, but arr is outside it's scope and thus a[i] always results in undefined.
 
@@ -74,10 +74,10 @@ function isEquivilant(a, b) {
   return true;
 }
 
-// This will only work for objects that are simply and neatly constructed, and won't be able to handle things like:
+// This will only work for objects that are simply and neatly constructed, but won't be able to handle things like:
 // 1. If a value of one of the keys is an object
 // 2. If a value of one of the keys is NaN (not equal to itself)
-// 3. a has a property with value of undefined, while b doesn't have that key resulting in undefined (returns true when there isen't a match)
+// 3. If a has a property with value of undefined, while b doesn't have that key resulting in undefined (returns true when there isen't a match)
 
 // Ultimately I wouldn't trust isEquivilant() and would instead rely on .isEqual(a, b) in the Lo-Dash library which can handle deeper object value comparisons
 
@@ -96,5 +96,3 @@ fibRecursive(n);
 let end = performance.now();
 let calcTime = end - start + ' milliseconds';
 localStorage.setItem('calcTime', calcTime);
-
-// List the phases of the React component lifecycle
